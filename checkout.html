@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="cart.css"> <!-- Link to the cart.css for consistency -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="checkout-section">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button type="submit">Complete Order</button>
+        </form>
+        <div class="confirmation-message" id="confirmation-message" style="display: none;">
+            <h2>Your order is on its way!</h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Dropshipping Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('checkout-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            document.getElementById('confirmation-message').style.display = 'block'; // Show confirmation message
+            this.reset(); // Reset the form
+        });
+    </script>
+</body>
+</html>

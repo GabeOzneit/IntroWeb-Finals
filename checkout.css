@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9; /* Light background */
+    color: #333; /* Dark text */
+}
+
+header {
+    background-color: #222; /* Dark header */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+header .logo img {
+    max-width: 150px;
+    height: auto;
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* White text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff5733; /* Highlight color */
+}
+
+.checkout-section {
+    max-width: 600px;
+    margin: 40px auto; /* Center the checkout section */
+    padding: 20px;
+    background-color: #fff; /* White background for the checkout section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block; /* Block for labels */
+    margin: 10px 0 5px; /* Spacing */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding */
+    margin-bottom: 20px; /* Margin at the bottom */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+textarea {
+    height: 100px; /* Height for textarea */
+}
+
+button {
+    background-color: #ff5733; /* Highlight color for button */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size for the button */
+    display: block; /* Make the button block-level */
+    margin: 20px auto; /* Center the button */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #c44d2d; /* Darker shade on hover */
+}
+
+.confirmation-message {
+    text-align: center; /* Center the confirmation message */
+    margin-top: 20px; /* Space above */
+    color: #ff5733; /* Highlight color for confirmation message */
+}
+
+/* Footer */
+footer {
+    background-color: #222; /* Dark footer */
+    color: #fff; /* White footer text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .checkout-section h1 {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    button {
+        font-size: 16px; /* Adjust font size for button */
+    }
+}
+
+/* Tablet Styles (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .checkout-section h1 {
+        font-size: 40px; /* Adjust font size for medium screens */
+    }
+
+    button {
+        font-size: 18px; /* Adjust font size for button */
+    }
+}
